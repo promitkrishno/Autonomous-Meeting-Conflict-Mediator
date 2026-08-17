@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-alert: var(--alert);
+  --color-alert-light: var(--alert-light);
+  --color-border: var(--border);
+  --color-ring: var(--ring);
+
+  --font-sans: 'Inter', sans-serif;
+}
+
+@layer base {
+  :root {
+    --background: #f8fafc; /* very light slate/gray */
+    --foreground: #0f172a; /* slate 900 */
+    --card: #ffffff;
+    --card-foreground: #0f172a;
+    --primary: #94bba5; /* soft sage green */
+    --primary-foreground: #ffffff;
+    --secondary: #e0e7ff; /* soft blue (indigo 100) */
+    --secondary-foreground: #3730a3; /* indigo 800 */
+    --muted: #f1f5f9; /* slate 100 */
+    --muted-foreground: #64748b; /* slate 500 */
+    --accent: #e2e8f0;
+    --accent-foreground: #0f172a;
+    --alert: #e07a5f; /* terracotta / muted orange */
+    --alert-light: #fef0eb; /* very light terracotta */
+    --border: #e2e8f0;
+    --ring: #94bba5;
+    --radius: 0.75rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased selection:bg-primary/20;
+  }
+}

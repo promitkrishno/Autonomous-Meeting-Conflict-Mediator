@@ -1,0 +1,11 @@
+{
+  "title": "B2B SaaS Meeting Mediator",
+  "description": "AI-driven calendar tool that detects meeting conflicts and burnout risks to optimize team schedules and enhance productivity through smart rescheduling.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
